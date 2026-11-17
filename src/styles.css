@@ -1,0 +1,27 @@
+@import "../.panda/styles.css";
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+/* Tokens only exist under .light / .dark. color-scheme keeps the canvas light,
+   so text stays readable when the operating system prefers a dark scheme. */
+html.light {
+  color-scheme: light;
+  background-color: var(--colors-surface-base);
+  color: var(--colors-text-primary);
+}
+
+html.dark {
+  color-scheme: dark;
+  background-color: var(--colors-surface-base);
+  color: var(--colors-text-primary);
+}
+
+body {
+  background-color: var(--colors-surface-base);
+  color: var(--colors-text-primary);
+}
